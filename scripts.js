@@ -134,3 +134,40 @@ window.addEventListener('load', function() {
         loader.remove();
     }, 1000);
 });
+
+function adjustForScreenSize() {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    
+    // Điều chỉnh kích thước message
+    const christmasMessage = document.getElementById("as");
+    if (screenWidth < 768) {
+        christmasMessage.style.fontSize = '40px';
+        christmasMessage.style.top = '10px';
+    } else {
+        christmasMessage.style.fontSize = '80px';
+        christmasMessage.style.top = '15px';
+    }
+
+    // Điều chỉnh kích thước cây thông
+    const treeIcon = document.querySelector(".tree-icon");
+    if (screenWidth < 480) {
+        treeIcon.style.width = '200px';
+    } else if (screenWidth < 768) {
+        treeIcon.style.width = '300px';
+    }
+
+    // Điều chỉnh card
+    const card = document.querySelector('.card');
+    if (screenWidth < 480) {
+        card.style.width = '280px';
+        card.style.height = '380px';
+    } else {
+        card.style.width = '300px';
+        card.style.height = '400px';
+    }
+}
+
+// Thêm event listeners
+window.addEventListener('load', adjustForScreenSize);
+window.addEventListener('resize', adjustForScreenSize);

@@ -374,3 +374,53 @@ h4 {
 .text-right {
     text-align: right;
 }
+
+@media (max-width: 480px) {
+    .christmas-message {
+        font-size: 40px !important;
+        top: 10px !important;
+    }
+
+    .tree-container {
+        margin-top: 80px;
+    }
+
+    .card {
+        transform: translate(-50%, -50%) perspective(2000px) scale(0.9);
+    }
+
+    .card:hover {
+        transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1);
+    }
+
+    .card .details p {
+        font-size: 13px;
+        line-height: 4px;
+    }
+
+    #showButton {
+        padding: 12px 24px;
+        font-size: 14px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .christmas-message {
+        font-size: 32px !important;
+    }
+
+    .card {
+        transform: translate(-50%, -50%) perspective(2000px) scale(0.8);
+    }
+
+    .card:hover {
+        transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(0.9);
+    }
+}
+
+/* Thêm meta viewport handling */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
