@@ -357,14 +357,15 @@ h4 {
     box-sizing: border-box;
     padding: 0 0 0 10px;
     z-index: -1;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .card .details p {
-    font-size: 15px;
-    line-height: 5px;
+    font-size: 14px;
+    line-height: 15px;
     transform: rotate(-10deg);
     padding: 0 0 0 20px;
+    margin: 10px 0;
 }
 
 .card .details h4 {
@@ -394,14 +395,28 @@ h4 {
     }
 
     .card .details p {
-        font-size: 13px;
-        line-height: 4px;
+        font-size: 12px;
+        line-height: 18px;
+        margin: 8px 0;
+    }
+
+    .card .details h4 {
+        font-size: 22px;
+        margin-bottom: 15px;
     }
 
     #showButton {
         padding: 12px 24px;
         font-size: 14px;
         bottom: 20px;
+    }
+
+    .card .details {
+        margin-top: 30px;
+    }
+
+    .text-right {
+        margin-top: 15px;
     }
 }
 
@@ -416,6 +431,21 @@ h4 {
 
     .card:hover {
         transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(0.9);
+    }
+
+    .card .details p {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 6px 0;
+    }
+
+    .card .details h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .card .details {
+        margin-top: 25px;
     }
 }
 
